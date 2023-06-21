@@ -1,0 +1,301 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>RoCo: Dialectic Multi-Robot Collaboration with Large Language Models</title>
+		<link rel="icon" type="image/x-icon" href="favicon.ico?v=1"/>
+		<meta charset="utf-8" />
+		 <meta name="viewport" content="width=1000">
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-W89SB0LDFH"></script>
+		<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'G-W89SB0LDFH');
+		</script>
+
+		<meta property="og:url"           content="https://project-roco.github.io" />
+	    <meta property="og:type"          content="website" />
+	    <meta property="og:title"         content="RoCo: Dialectic Multi-Robot Collaboration \\ with Large Language Models" />
+	    <meta property="og:description"   content="Muli-robot collaboration using LLMs" />
+
+	</head>
+	<body id="top">
+
+		<!-- Main -->
+			<div id="main" style="padding-bottom:1em; padding-top: 5em; width: 60em; max-width: 70em; margin-left: auto; margin-right: auto; text-align: justify; color: #808181">
+					<section id="four">
+ 
+						<h1 style="text-align: center; color: #4780bd; font-size: 225%; margin-bottom: 0.25em;">RoCo: Dialectic Multi-<u>Ro</u>bot <u>Co</u>llaboration <br/> with Large Language Models</h1>
+						<h3 style="text-align: center;">
+							<a href="https://mandizhao.github.io">Mandi Zhao, &nbsp  </a>  
+							<a href="https://www.linkedin.com/in/shreeyajain/">Shreeya Jain,  &nbsp  </a>
+							<a href="https://www.cs.columbia.edu/~shurans/">Shuran Song  </a>
+							
+						</h3>
+						<!-- TODO: remove names for submission!!!  -->
+						<!-- <h3 style="text-align: center;"><p>Columbia University</p></h3> --> 
+						 
+						<p>We propose a novel approach to multi-robot collaboration that harnesses the power of pre-trained large language models (LLMs) for both high-level communication and low-level path planning. Robots are equipped with LLMs to discuss and collectively reason task strategies; then generate sub-task plans and task space waypoint paths, which are used by a multi-arm motion planner to accelerate trajectory planning. 
+							We also provide feedback from the environment, such as collision checking, and prompt the LLM agents to improve their plan and waypoints in-context. For evaluation, we introduce RoCoBench, a 6-task benchmark covering a wide range of multi-robot collaboration scenarios, accompanied by a text-only dataset for agent representation and reasoning. 
+							We experimentally demonstrate the effectiveness of our approach: it achieves high success rates across all tasks in RoCoBench and adapts to variations in task semantics. Our dialog setup offers high interpretability and flexibility: in real world experiments, we show RoCo easily incorporates human-in-the-loop, where a user can communicate and collaborate with a robot agent to complete tasks together.
+						</p>
+					 
+		
+					    <span class="image fit" style="max-width: 100%; margin-top: 0.5em; margin-bottom: 1.5em; margin-left: auto; margin-right: auto">
+							<img src="images/teaser.jpg" alt="" />
+						</span>
+
+						<hr>
+						<!-- <h3>Paper & Code</h3>
+
+						<p style="margin-bottom: 1em;">Latest version: <a href="https://arxiv.org/abs/2207.08192">arXiv</a>.
+							&nbsp Code and instructions to download data: <a href="https://github.com/columbia-ai-robotics/BusyBot">Github</a>.
+						</p> -->
+
+						<!-- <div class="12u$"><a href="/"><span class="image fit" style="border: 1px solid; border-color: #888888;"><img src="images/paper-thumbnail.jpeg" alt="" /></span></a></div> -->
+						
+						<!-- Code is available on <a href="/">GitHub</a>. -->
+						
+						<!-- <hr>
+						<h3>Team</h3>
+						<section>
+							<div class="box alt" style="margin-bottom: 1em;">
+								<div class="row 50% uniform" style="width: 90%;">
+									<div class="2u" style="font-size: 0.7em; line-height: 1.5em; text-align: center;"><a href="https://mandizhao.github.io/"><span class="image fit" style="margin-bottom: 0.5em;"><img src="images/mandi_thumbnail.jpg" alt="" style="border-radius: 50%;" /></span>Mandi Zhao</a></div>
+
+									<div class="2u" style="font-size: 0.7em; line-height: 1.5em; text-align: center;"><a href="https://www.linkedin.com/in/shreeyajain/"><span class="image fit" style="margin-bottom: 0.5em;"><img src="images/shreeya_thumbnail.jpg" alt="" style="border-radius: 50%;" /></span>Shreeya Jain</a></div>
+									
+									<div class="2u" style="font-size: 0.7em; line-height: 1.5em; text-align: center;"><a href="https://www.cs.columbia.edu/~shurans/"><span class="image fit" style="margin-bottom: 0.5em;"><img src="images/shuran_thumbnail.jpg" alt="" style="border-radius: 50%;" /></span>Shuran Song</a></div>
+									
+								</div>
+							</div>
+						</section>
+			 
+
+						<hr>
+						<h3>BibTeX</h3>
+						<pre><code>
+							@ </code></pre>
+
+						<hr>
+						<div class="row">
+							<div class="12u$ 12u$(xsmall)" style="text-align: center;">
+								<h3>Technical Summary Video</h3>
+								<iframe id="match-video" width="640" height="360" style="margin-bottom: 2em; margin-left: auto; margin-right: auto; display:block;" src="https://www.youtube.com/embed/EJ98xBJZ9ek" frameborder="0" allowfullscreen></iframe>
+							</div>
+						</div> -->
+
+						<hr>
+						<h3>Method Overview</h3>
+						<!-- <div class="12u$">
+							<span class="image fit" style="max-width: 100%; border: 0px solid; border-color: #888888; margin-left: auto; margin-right: auto">
+								<img src="images/board.jpg" alt="">
+							</span>
+						</div>
+						<div class="12u$">
+							<span class="image fit" style="max-width: 100%; border: 0px solid; border-color: #888888; margin-left: auto; margin-right: auto">
+								<img src="images/board_examples.jpg" alt="">
+							</span>
+						</div> -->
+						<p>
+							RoCo consists of three main components: 1) <b>Multi-agent dialog via LLMs</b>: each robot is equipped with an LLM that `talks' on its behalf, enabling a discussion of task strategy. 2) <b>LLM-Generated Sub-task Plan</b>: the dialog ends with a proposal of sub-task plan, including optionally a path of task space waypoints, and environment feedback on invalid plans are provided for the agents to improve. 3) <b>Multi-arm motion planning:</b> A validated sub-task plan then produces goal configurations for the robot arms, which are used by a centralized multi-arm motion planner that outputs trajectories for each robot.
+						</p>
+						<div class="12u$">
+							<span class="image fit" style="max-width: 100%; border: 0px solid; border-color: #888888; margin-left: auto; margin-right: auto">
+								<img src="images/roco-method.jpg" alt="">
+								<!-- <video controls autoplay muted playsinline style="width: 110%;" >
+									<source src="roco-video-fig1.m4v" >
+								</video> -->
+					
+							</span>
+						</div>
+						
+
+						<hr>
+						<h3>Real World Experiments</h3>
+						<!-- <div class="12u$">
+							<span class="image fit" style="max-width: 80%; border: 0px solid; border-color: #888888; margin-left: auto; margin-right: auto">
+								<img src="images/real-interact-reason.jpg" alt="">
+							</span>
+						</div> -->
+						
+						<!-- <div>
+							<span class="image fit" style="max-width: 22%; display: inline-block">
+								<img src="images/real-interact.jpg" alt="">
+							</span>
+							<video id="1x_speed" controls autoplay loop muted style="width: 50%; display: inline-block"><source src="images/videos/real-world-reasoning.mp4" type="video/mp4"></video>
+							<span class="image fit" style="max-width: 22%; display: inline-block">
+								<img src="images/real-reason.jpg" alt="">
+							</span>
+						</div> -->
+						<!-- <div>
+							<img style="width: 24%" src="images/real-interact.jpg" alt="">
+							<video id="1x_speed" controls autoplay loop muted style="width: 50%; display: inline-block"><source src="images/videos/real-world-reasoning.mp4" type="video/mp4"></video>
+							<img style="width: 23.8%" src="images/real-reason.jpg" alt="">
+						</div>
+
+						<p>We test the trained model on a real-world busyboard with robot interactions.
+						   We show that our model is able to infer the action affordances from real-world visual observations and reason inter-object functional relations through robot interactions.
+						   The video shows reasoning result with respect to interaction steps; the right image shows reasoning result on a few more configurations.
+						   More details can be found in the supplementary materials.
+						</p> -->
+
+						 
+						<h3><a id="demos">Example Successful Episodes</a></h3>
+								<!-- <p>
+								In this task, the robot needs to 
+								<br>① Pickup a randomly placed mug and place it lip down (marked orange).
+								<br>② Rotate the mug such that its handle is pointing left.
+								</p>
+								<video controls muted style="width: 97.6%; margin-left: 0%;" preload="metadata"><source src="videos/mug_flipping_20_web.mp4" type="video/mp4"> </video> -->
+								<div class="box alt" style="margin-bottom: 1em;">
+									<div class="row 33% uniform" style="width: 100%;">
+										<div class="2u" style="font-size: 1em; line-height: 1.5em; text-align: center; width: 33.3%">
+											<span class="image fit" style="margin-bottom: 0.5em;">
+												<video controls autoplay muted playsinline style="width: 110%;" >
+													<source src="demos/demo_sort_dialog_seed2/video_step_3_full_episode_6seconds.mp4" type="video/mp4"> </video>
+											</span>
+											Task: Sort Cubes
+											<br>
+											<h4 style="font-size: 0.8em; color: #7db6f7">
+												<a href="demos/demo_sort_dialog_seed2/response_only.html">[LLM dialog] &nbsp 
+											    <a href="demos/demo_sort_dialog_seed2/full_prompt_and_response.html">[LLM dialog and prompts]</a> 
+											</h4>
+											 
+										</div>
+										
+										<div class="2u" style="font-size: 1em; line-height: 1.5em; text-align: center; width: 33.3%">
+											<span class="image fit" style="margin-bottom: 0.5em;">
+												<video controls autoplay muted playsinline style="width: 110%;">
+													<source src="demos/demo_pack_dialogNoHistory_seed1/video_step_7_full_episode_6seconds.mp4" type="video/mp4"> </video>
+											</span>
+											Task: Pack Grocery
+											<br>
+											<h4 style="font-size: 0.8em; color: #7db6f7">
+												<a href="demos/demo_pack_dialogNoHistory_seed1/response_only.html">[LLM dialog]  &nbsp
+												<a href="demos/demo_pack_dialogNoHistory_seed1/full_prompt_and_response.html">[LLM dialog and prompts]</a>
+											</h4> 
+										</div>
+
+										<div class="2u" style="font-size: 1em; line-height: 1.5em; text-align: center; width: 33.3%">
+											<span class="image fit" style="margin-bottom: 0.5em;">
+												<video controls autoplay muted playsinline style="width: 110%;">
+													<source src="demos/demo_sandwich_dialog_seed8/video_step_7_full_episode_6seconds.mp4" type="video/mp4"> </video>
+											</span>
+											Task: Make Sandwich
+											<br>
+											<h4 style="font-size: 0.8em; color: #7db6f7">
+												<a href="demos/demo_sandwich_dialog_seed8/response_only.html">[LLM dialog]  &nbsp
+												<a href="demos/demo_sandwich_dialog_seed8/full_prompt_and_response.html" >[LLM dialog and prompts]</a>
+											</h4>
+											 
+										</div>
+							
+									</div>
+								</div> 
+								<div class="box alt" style="margin-bottom: 1em;">
+									<div class="row 30% uniform" style="width: 100%;">
+										<div class="2u" style="font-size: 1em; line-height: 1.5em; text-align: center; width: 33.3%">
+											<span class="image fit" style="margin-bottom: 0.5em;">
+												<video controls autoplay muted playsinline style="width: 110%;" >
+													<source src="demos/demo_sweep_dialog_seed0/video_step_6_full_episode_6seconds.mp4" type="video/mp4"> </video>
+											</span>
+											Task: Sweep Floor
+											<br>
+											<h4 style="font-size: 0.8em; color: #7db6f7">
+												<a href="demos/demo_sweep_dialog_seed0/response_only.html">[LLM dialog]  &nbsp
+												<a href="demos/demo_sweep_dialog_seed0/full_prompt_and_response.html">[LLM dialog and prompts]</a>
+											</h4>
+										</div>
+										
+										<div class="2u" style="font-size: 1em; line-height: 1.5em; text-align: center; width: 33.3%">
+											<span class="image fit" style="margin-bottom: 0.5em;">
+												<video controls autoplay muted playsinline style="width: 110%;">
+													<source src="demos/demo_cabinet_dialog_seed5/video_step_3_full_episode_6seconds.mp4" type="video/mp4" > </video>
+											</span>
+											Task: Arrange Cabinet
+											<br>
+											<h4 style="font-size: 0.8em; color: #7db6f7">
+												<a href="demos/demo_cabinet_dialog_seed5/response_only.html">[LLM dialog]  &nbsp
+												<a href="demos/demo_cabinet_dialog_seed5/full_prompt_and_response.html">[LLM dialog and prompts]</a>
+											</h4>
+										</div>
+
+										<div class="2u" style="font-size: 1em; line-height: 1.5em; text-align: center; width: 33.3%">
+											<span class="image fit" style="margin-bottom: 0.5em;">
+												<video controls autoplay muted playsinline style="width: 110%;">
+													<source src="demos/demo_rope_dialog_seed4/video_step_2_full_episode_6seconds.mp4" type="video/mp4"> </video>
+											</span>
+											Task: Move Rope
+											<br>
+											<h4 style="font-size: 0.8em; color: #7db6f7">
+												<a href="demos/demo_rope_dialog_seed4/response_only.html">[LLM dialog]  &nbsp
+												<a href="demos/demo_rope_dialog_seed4/full_prompt_and_response.html">[LLM dialog and prompts]</a>
+											</h4>
+										</div>
+							
+									</div>
+								</div>
+						<!-- <p>Compared to the predictive agent which relies on correct future state predictions from the dynamics model, the relation agent generalizes better on novel objects. 
+							However, the relation agent struggles in handling one-to-many relations since it cannot infer the exact action position and direction. 
+							Our method(BusyBot) combines the advantages of both agents.
+						</p>
+						
+						<hr>
+						<h3>Applications in Simulation Home Environments</h3>
+						<div class="12u$">
+							<span class="image fit" style="max-width: 80%; border: 0px solid; border-color: #888888; margin-left: auto; margin-right: auto">
+								<img src="images/room.jpg" alt="">
+							</span>
+						</div>
+						<p>To demonstrate the learned skills can be applied beyond the BusyBoard environment, we further test our reasoning model in 2 kitchen scenes from <a href="https://ai2thor.allenai.org/">AI2THOR</a>. 
+							We observe that the trained reasoning model from BusyBot is able to infer the correct inter-object relations through interactions, without the need of fine-tuning.
+							The result demonstrates the generalization ability of our proposed environment and algorithm to new domains and applications.
+						</p> -->
+
+						<!-- <div class="12u$">
+							<span class="image fit" style="max-width: 80%; border: 0px solid; border-color: #888888; margin-left: auto; margin-right: auto">
+								<img src="images/sim-novel-config-goal-conditioned.jpg" alt="">
+							</span>
+						</div>
+						<p>More results on busyboards with novel configurations and seen object instances. The predictive agent achieves better performance on one-to-many tasks with seen object instances by leveraging future predictions to select the correct action to apply on the trigger object. In contrast, the relation agent can only identify the trigger object but not the exact action (e.g., which link to interact with or which direction to push).
+						</p>
+						<div class="12u$">
+							<span class="image fit" style="max-width: 80%; border: 0px solid; border-color: #888888; margin-left: auto; margin-right: auto">
+								<img src="images/sim-novel-object-goal-conditioned.jpg" alt="">
+							</span>
+						</div>
+						<p>More results on busyboards with novel configurations and novel object instances. The relation agent performs slightly better than the predictive agent on boards with novel objects, when the dynamics model fails to predict the correct next state. This shows that inter-object functional relationship can generalize to scenarios when future predictions are not reliable enough to assist planning. -->
+
+						<!-- <hr>
+				        <h3>Acknowledgements</h3>
+				        <p> This work was supported by National Science Foundation under CMMI-2037101 and Amazon Research Award. We would like to thank Google for the UR5 robot hardware.</p>
+						<hr> -->
+
+						<hr>
+						<h3>Acknowledgements</h3>
+						<p>The authors would like to thank Zeyi Liu, Huy Ha, Zhenjia Xu, Cheng Chi, Samir Gadre for their valuable feedback and support. 
+							<!-- This work was supported in part by National Science Foundation under 2143601, 2037101, and 2132519, and Microsoft Faculty Fellowship. 
+							We would like to thank Google for the UR5 robot hardware.  
+							The views and conclusions contained herein are those of the authors and should not be interpreted as necessarily representing the official policies, either expressed or implied, of the sponsors. -->
+						</p>
+						
+						<h3>Contact</h3>
+				        <p><a href="https://mandizhao.github.io/">Mandi Zhao</a>.</p>
+						
+					</section> 
+					
+			</div>
+
+			<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+	</body>
+</html>
