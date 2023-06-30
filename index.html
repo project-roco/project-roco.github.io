@@ -215,12 +215,14 @@
 							We run RoCo the modification that only the robot agent is controlled by a GPT-4, and it discusses with a human user that interacts with part of the task workspace.  
 							We evaluate 2 main variation categories: 1) object initialization, i.e. initial block locations are randomized for each run; 2) task order specification, where the agents are asked to follow a fixed order to move the blocks. 
 							We also evaluate two types of human behaviors: first is an oracle human that corrects mistakes in the OWL-ViT-guided scene descriptions and the robot's responses; second is an imperfect human that provides no feedback to those errors. 
-							See below for demo videos of the real world experiments.
+							See below for a demo video of the real world experiments.
 
 						</div>
 						<div class="12u$">
-							<span class="image fit" style="max-width: 95%; border: 0px solid; border-color: #888888; margin-left: auto; margin-right: auto">
-								<img src="roco-real-world-fig.jpg">
+							<span class="image fit" style="max-width: 80%; border: 0px solid; border-color: #888888; margin-left: auto; margin-right: auto">
+								<video controls autoplay loop muted style="width: 90%; display: inline-block">
+									<source src="real-video-5x-cropped.mp4" type="video/mp4">
+								</video>
 							</span>
 						</div>
 						<hr>
@@ -246,10 +248,9 @@
 						</p> -->
 						
 						<h3> RoCoBench-Text: Multi-Agent Representation and Reasoning Dataset </h3>
-							<div>In addition to our main experimental results, we curate a text-based dataset that evaluates an LLM's agent representation and task reasoning ability. 
-								This dataset aligns LLM with desirable capabilities in multi-agent collaboration, without requiring robotic environment interaction. 
-								It builds on data from our evaluation on RoCoBench, and contains a series of additional questions that are more open-ended and go beyond simply finding the next best action plan.
-								This dataset contains yes/no, multiple-choice or short question-answering questions that evaluate a range of different reasoning abilities, we explain each category below. Click expand to view each example questions in the dataset
+							<div>We curate a text-based dataset that evaluates an LLM's agent representation and task reasoning ability, without requiring robotic environment interaction. 
+								RoCoBench-Text builds on data from our evaluation runs on RoCoBench, and contains a series of additional questions that are more open-ended and go beyond simply finding the next best action plan.
+								This dataset contains yes/no, multiple-choice or short question-answering questions that evaluate a range of different reasoning abilities, we explain each category below. Click expand to view each example questions in the dataset.
 							</div>
 							
 								<a style="color: #787878; font-size: 1em;">
