@@ -44,7 +44,7 @@
 							<video controls autoplay muted playsinline style="width: 100%;">
 								<source src="roco-teaser-video-small.mp4" > </video>
 						</span>
-						<p>We propose a novel approach to multi-robot collaboration that harnesses the power of pre-trained large language models (LLMs) for both high-level communication and low-level path planning. Robots are equipped with LLMs to discuss and collectively reason task strategies; then generate sub-task plans and task space waypoint paths, which are used by a multi-arm motion planner to accelerate trajectory planning. 
+						<p style="color: #797878;"> We propose a novel approach to multi-robot collaboration that harnesses the power of pre-trained large language models (LLMs) for both high-level communication and low-level path planning. Robots are equipped with LLMs to discuss and collectively reason task strategies; then generate sub-task plans and task space waypoint paths, which are used by a multi-arm motion planner to accelerate trajectory planning. 
 							We also provide feedback from the environment, such as collision checking, and prompt the LLM agents to improve their plan and waypoints in-context. For evaluation, we introduce RoCoBench, a 6-task benchmark covering a wide range of multi-robot collaboration scenarios, accompanied by a text-only dataset for agent representation and reasoning. 
 							We experimentally demonstrate the effectiveness of our approach: it achieves high success rates across all tasks in RoCoBench and adapts to variations in task semantics. Our dialog setup offers high interpretability and flexibility: in real world experiments, we show RoCo easily incorporates human-in-the-loop, where a user can communicate and collaborate with a robot agent to complete tasks together.
 						</p>
@@ -88,7 +88,7 @@
 							</div>
 						</div> -->
 						<hr>
-						<h3>RoCoBench: </h3>
+						<h3>RoCoBench </h3>
 						<div class="12u$">
 							<span class="image fit" style="max-width: 90%; border: 0px solid; border-color: #888888; margin-left: auto; margin-right: auto">
 								<img src="images/teaser.jpg" alt=""> 
@@ -113,7 +113,7 @@
 							RoCo consists of three main components: 1) <b>Multi-agent dialog via LLMs</b>: each robot is equipped with an LLM that `talks' on its behalf, enabling a discussion of task strategy. 2) <b>LLM-Generated Sub-task Plan</b>: the dialog ends with a proposal of sub-task plan, including optionally a path of task space waypoints, and environment feedback on invalid plans are provided for the agents to improve. 3) <b>Multi-arm motion planning:</b> A validated sub-task plan then produces goal configurations for the robot arms, which are used by a centralized multi-arm motion planner that outputs trajectories for each robot.
 						</p>
 						
-						<h3><a id="demos">Example Successful Episodes in RoCoBench</a></h3>
+						<h3>Example Successful Episodes in RoCoBench</h3>
 								<!-- <p>
 								In this task, the robot needs to 
 								<br>① Pickup a randomly placed mug and place it lip down (marked orange).
@@ -634,6 +634,7 @@
 					</section> 
 					
 			</div>
+			<a href="google90ae9e7961795b04.html"></a>
 
 			<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
