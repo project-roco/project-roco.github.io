@@ -232,11 +232,20 @@
 								<video controls autoplay loop muted style="width: 90%; display: inline-block">
 									<source src="demos-real/2-order-faster.mp4" type="video/mp4">
 								</video>
-								<p>Successful episode with task order specification "place blocks in order blue, yellow, red" </p>
+								<p>Successful episode with task order specification <i>"place blocks in order blue, yellow, red"</i></p>
 							</span>
 						</div>
 						<div style="margin-bottom: 20px">
-							We also evaluate two types of human behaviors: first is an oracle human that corrects mistakes in the OWL-ViT-guided scene descriptions and the robot's responses; second is an imperfect human that provides no feedback to those errors. 
+							The task performance is primarily bottle-necked by incorrect object detection from OWL-ViT, which leads to failure if an incorrect object is picked up or if the task ends early because no objects were detected on the table or inside cups.
+							Thus, we also evaluate two types of human behaviors: first is an oracle human that corrects mistakes in the OWL-ViT-guided scene descriptions and the robot's responses; second is an imperfect human that provides no feedback to those errors. 
+						</div>
+						<div class="12u$" style="font-size: 1em; line-height: 1.5em; text-align: center">
+							<span class="image fit" style="max-width: 80%; border: 0px solid; border-color: #888888; margin-left: auto; margin-right: auto">
+								<video controls autoplay loop muted style="width: 90%; display: inline-block">
+									<source src="demos-real/3-failure-analysis.mp4" type="video/mp4">
+								</video>
+								<p>Failure episode with task order specification <i>"place red block first"</i></p>
+							</span>
 						</div>
 						<hr>
 						<!-- <div>
