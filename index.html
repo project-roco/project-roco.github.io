@@ -213,20 +213,30 @@
 								</div>
 						<hr>
 						<h3>Real World Experiments</h3>
-						<div>
+						<div style="margin-bottom:20px">
 							We validate RoCo on a real world setup, where a robot arm collaborates with a human to complete a sorting blocks task.
-							We run RoCo the modification that only the robot agent is controlled by a GPT-4, and it discusses with a human user that interacts with part of the task workspace.  
+							We run RoCo with the modification that only the robot agent is controlled by a GPT-4, and it discusses with a human user that interacts with part of the task workspace.  
+							For perception, we use the OWL-ViT object detection model to generate scene description.
 							We evaluate 2 main variation categories: 1) object initialization, i.e. initial block locations are randomized for each run; 2) task order specification, where the agents are asked to follow a fixed order to move the blocks. 
-							We also evaluate two types of human behaviors: first is an oracle human that corrects mistakes in the OWL-ViT-guided scene descriptions and the robot's responses; second is an imperfect human that provides no feedback to those errors. 
-							See below for a demo video of the real world experiments.
-
 						</div>
-						<div class="12u$">
+						<div class="12u$" style="font-size: 1em; line-height: 1.5em; text-align: center">
 							<span class="image fit" style="max-width: 80%; border: 0px solid; border-color: #888888; margin-left: auto; margin-right: auto">
 								<video controls autoplay loop muted style="width: 90%; display: inline-block">
-									<source src="real-video-5x-cropped.mp4" type="video/mp4">
+									<source src="demos-real/1-no-order-faster.mp4" type="video/mp4">
 								</video>
+								<p>Successful episode with object initialization and no task order specification</p>
 							</span>
+						</div>
+						<div class="12u$" style="font-size: 1em; line-height: 1.5em; text-align: center">
+							<span class="image fit" style="max-width: 80%; border: 0px solid; border-color: #888888; margin-left: auto; margin-right: auto">
+								<video controls autoplay loop muted style="width: 90%; display: inline-block">
+									<source src="demos-real/2-order-faster.mp4" type="video/mp4">
+								</video>
+								<p>Successful episode with task order specification "place blocks in order blue, yellow, red" </p>
+							</span>
+						</div>
+						<div style="margin-bottom: 20px">
+							We also evaluate two types of human behaviors: first is an oracle human that corrects mistakes in the OWL-ViT-guided scene descriptions and the robot's responses; second is an imperfect human that provides no feedback to those errors. 
 						</div>
 						<hr>
 						<!-- <div>
