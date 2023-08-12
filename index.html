@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<title>RoCo: Dialectic Multi-Robot Collaboration with Large Language Models</title>
-		<link rel="icon" type="image/x-icon" href="favicon.ico?v=1"/>
+		<!-- <link rel="icon" type="image/x-icon" href="favicon.ico?v=1"/> -->
 		<meta charset="utf-8" />
 		 <meta name="viewport" content="width=1000">
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -18,7 +18,7 @@
 
 		<meta property="og:url"           content="https://project-roco.github.io" />
 	    <meta property="og:type"          content="website" />
-	    <meta property="og:title"         content="RoCo: Dialectic Multi-Robot Collaboration \\ with Large Language Models" />
+	    <meta property="og:title"         content="RoCo: Dialectic Multi-Robot Collaboration with Large Language Models" />
 	    <meta property="og:description"   content="Muli-robot collaboration using LLMs" />
 
 	</head>
@@ -313,7 +313,7 @@
 								<a style="color: #787878; font-size: 1em;">
 								1. Self-Knowledge - Agent Capability </a> 
 								<div>
-									evaluates how well the agent establishes its identity under a given task context by asking questions regarding an agent's own capabilit under the given task constraints. 
+									This category contains 57 questions, based on Sort Cubes task from RoCoBench. By asking an LLM to explain an agent's own capability under the given task constraints, these questions evaluate how well the LLM represents and establishes the identity of individual agents. 	
 								</div>
 									<details>
 										<summary style="font-size: 0.9em; margin-left: 30px;">
@@ -364,7 +364,7 @@
 							<a style="color: #787878;">
 								2. Self-Knowledge - Memory Retrival </a>
 								<div>
-									evaluates how well the agent establishes its identity by asking memory retrieval and reasoning questions based on a given history of agent dialog and environment actions.
+									This category contains 44 total questions, based on Make Sandwich and Sweep Floor tasks from RoCoBench. By providing a history of agent dialog and environment actions and asking an LLM to reason about an agent's past, the questions evaluates how well the LLM performs memory retrieval and reasoning for individual agents. 	
 								</div>
 								<details>
 									<summary style="font-size: 0.9em; margin-left: 30px;">
@@ -425,7 +425,7 @@
 							<a style="color: #787878">
 							3. Communication - Inquiry </a>
 							<div>
-								evaluates an agent's communication ability by asking for the most appropriate inquiry that effectively seeks information and helps their task reasoning.
+								This category contains 41 multiple-choice questions, based on Arrange Cabinet task from RoCoBench. The questions ask an LLM to speak as an agent and choose the most appropriate inquiry to seek information that helps their task reasoning. 	
 							</div>	
 								<details>
 									<summary style="font-size: 0.9em; margin-left: 30px;">
@@ -508,7 +508,7 @@
 							<a style="color: #787878">
 								4. Communication - Respond </a>
 								<div>
-									evaluates an agent's communication ability by asking to choose the most appropriate response to other agents under a given task context.
+									This category contains 96 yes/no questions, based on Sort Cubes task from RoCoBench. The questions ask an LLM to speak for one agent and choose the most appropriate response to other agents under a given task context.	
 								</div>	
 								<details>
 									<summary style="font-size: 0.9em; margin-left: 30px;">
@@ -580,7 +580,7 @@
 							<a style="color: #787878">
 							5. Adaptation: Unexpected Scenarios</a>
 							<div>
-								evaluates an LLM-represented agent's adaptation to unexpected situations that were not specified in context. 
+								This category contains 31 questions in the format of multiple choice (A, B, C), based on 3 RoCoBench tasks: Arrange Cabinet, Make Sandwich, Sweep Floor. The questions hypothesize unexpected situations that were not specified in the task context, and evaluate an LLM-represented agent's ability to choose the most appropriate response. 	
 							</div>
 							<details>
 								<summary style="font-size: 0.9em; margin-left: 30px;">
