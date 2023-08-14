@@ -1,8 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>RoCo: Dialectic Multi-Robot Collaboration with Large Language Models</title>
-		<!-- <link rel="icon" type="image/x-icon" href="favicon.ico?v=1"/> -->
+		<title>RoCo: Dialectic Multi-Robot Collaboration with Large Language Models</title> 
 		<meta charset="utf-8" />
 		 <meta name="viewport" content="width=1000">
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -30,18 +29,18 @@
  
 						<h1 style="text-align: center; color: #4780bd; font-size: 225%; margin-bottom: 0.25em;">RoCo: Dialectic Multi-<u>Ro</u>bot <u>Co</u>llaboration <br/> with Large Language Models</h1>
 						<!-- TODO: remove names for submission!!!  -->
-						<!-- <h3 style="text-align: center;">
+						<h3 style="text-align: center;">
 							<a href="https://mandizhao.github.io">Mandi Zhao, &nbsp  </a>  
 							<a href="https://www.linkedin.com/in/shreeyajain/">Shreeya Jain,  &nbsp  </a>
 							<a href="https://www.cs.columbia.edu/~shurans/">Shuran Song  </a>
-						</h3> -->
+						</h3>
 
-						<!-- <h3 style="text-align: center;"><p>Columbia University</p></h3> -->
+						<h3 style="text-align: center;"><p>Columbia University</p></h3>
 						
-						<!-- <h3 style="text-align: center;">
+						<h3 style="text-align: center;">
 							<a href="https://arxiv.org/abs/2307.04738">Paper</a> | 
 							&nbsp <a href="https://github.com/MandiZhao/robot-collab">Code</a>
-						</p> -->
+						</p>
 						
 					    <span class="image fit" style="max-width: 100%; margin-top: 0.5em; margin-bottom: 1.5em; margin-left: auto; margin-right: auto">
 							<!-- <img src="images/teaser.jpg" alt="" /> -->
@@ -52,10 +51,7 @@
 							We also provide feedback from the environment, such as collision checking, and prompt the LLM agents to improve their plan and waypoints in-context. For evaluation, we introduce RoCoBench, a 6-task benchmark covering a wide range of multi-robot collaboration scenarios, accompanied by a text-only dataset for agent representation and reasoning. 
 							We experimentally demonstrate the effectiveness of our approach: it achieves high success rates across all tasks in RoCoBench and adapts to variations in task semantics. Our dialog setup offers high interpretability and flexibility: in real world experiments, we show RoCo easily incorporates human-in-the-loop, where a user can communicate and collaborate with a robot agent to complete tasks together.
 						</p>
-					  
-						<!-- <h3>Paper & Code</h3> -->
-
-						
+					   
 
 						<!-- <div class="12u$"><a href="/"><span class="image fit" style="border: 1px solid; border-color: #888888;"><img src="images/paper-thumbnail.jpeg" alt="" /></span></a></div> -->
 						
@@ -118,14 +114,9 @@
 						<div class="row">
 							<div class="12u$ 12u$(xsmall)" style="text-align: center;">
 								<h3>Technical Summary Video</h3>
-								<!-- <iframe id="match-video" width="640" height="360" style="margin-bottom: 2em; margin-left: auto; margin-right: auto; display:block;" 
+								<iframe id="match-video" width="800" height="450" style="margin-bottom: 2em; margin-left: auto; margin-right: auto; display:block;" 
 								src="https://www.youtube.com/embed/NoaDMlbrrWY" frameborder="0" allowfullscreen>
-								</iframe> -->
-								<iframe id="match-video" width="900" height="500" 
-								style="margin-bottom: 2em; margin-left: auto; margin-right: auto; display:block; text-align: center; align-items: center; justify-content: center;" 
-								src="https://www.youtube.com/embed/OW2bXeb80eE" frameborder="0" allowfullscreen>
-								</iframe>
-								
+								</iframe> 
 							</div>
 						</div>
 
@@ -642,48 +633,17 @@
 									<a style="color: #787878; background-color: #e1f8d1;">
 									[C]: Alice, I can help you move trash_bin closer to you, but first I need to put my broom down.</a><br> 
 							</details>
-							 
-						<!-- <p>Compared to the predictive agent which relies on correct future state predictions from the dynamics model, the relation agent generalizes better on novel objects. 
-							However, the relation agent struggles in handling one-to-many relations since it cannot infer the exact action position and direction. 
-							Our method(BusyBot) combines the advantages of both agents.
-						</p>
-						
-						<hr>
-						<h3>Applications in Simulation Home Environments</h3>
-						<div class="12u$">
-							<span class="image fit" style="max-width: 80%; border: 0px solid; border-color: #888888; margin-left: auto; margin-right: auto">
-								<img src="images/room.jpg" alt="">
-							</span>
-						</div>
-						<p>To demonstrate the learned skills can be applied beyond the BusyBoard environment, we further test our reasoning model in 2 kitchen scenes from <a href="https://ai2thor.allenai.org/">AI2THOR</a>. 
-							We observe that the trained reasoning model from BusyBot is able to infer the correct inter-object relations through interactions, without the need of fine-tuning.
-							The result demonstrates the generalization ability of our proposed environment and algorithm to new domains and applications.
-						</p> -->
-
-						<!-- <div class="12u$">
-							<span class="image fit" style="max-width: 80%; border: 0px solid; border-color: #888888; margin-left: auto; margin-right: auto">
-								<img src="images/sim-novel-config-goal-conditioned.jpg" alt="">
-							</span>
-						</div>
-						<p>More results on busyboards with novel configurations and seen object instances. The predictive agent achieves better performance on one-to-many tasks with seen object instances by leveraging future predictions to select the correct action to apply on the trigger object. In contrast, the relation agent can only identify the trigger object but not the exact action (e.g., which link to interact with or which direction to push).
-						</p>
-						<div class="12u$">
-							<span class="image fit" style="max-width: 80%; border: 0px solid; border-color: #888888; margin-left: auto; margin-right: auto">
-								<img src="images/sim-novel-object-goal-conditioned.jpg" alt="">
-							</span>
-						</div>
-						<p>More results on busyboards with novel configurations and novel object instances. The relation agent performs slightly better than the predictive agent on boards with novel objects, when the dynamics model fails to predict the correct next state. This shows that inter-object functional relationship can generalize to scenarios when future predictions are not reliable enough to assist planning. -->
- 
+							  
 
 						<hr>
-						<!-- <h3>Acknowledgements</h3>
+						<h3>Acknowledgements</h3>
 						<p>
 							This work was supported in part by NSF Award #2143601, #2037101, and #2132519. We would like to thank Google for the UR5 robot hardware.  The views and conclusions contained herein are those of the authors and should not be interpreted as necessarily representing the official policies, either expressed or implied, of the sponsors. 
 							The authors would like to thank Zeyi Liu, Zhenjia Xu, Huy Ha, Cheng Chi, Samir Gadre, Mengda Xu, and Dominik Bauer for their fruitful discussions throughout the project and for providing helpful feedback on initial drafts of the manuscript.
 						</p>
 						<hr>
-						<h3>BibTeX</h3>  -->
-<!-- <pre class="bibtex"> 
+						<h3>BibTeX</h3> 
+<pre class="bibtex"> 
 <code>@misc{mandi2023roco,
 	title={RoCo: Dialectic Multi-Robot Collaboration with Large Language Models}, 
 	author={Zhao Mandi and Shreeya Jain and Shuran Song},
@@ -692,9 +652,9 @@
 	archivePrefix={arXiv},
 	primaryClass={cs.RO}
 }</code>  
-</pre> -->
-						<!-- <h3>Contact</h3>
-				        <p>Please reach out to <a href="https://mandizhao.github.io/">Mandi Zhao</a>: mandi.zhao AT cs.columbia.edu</p> -->
+</pre>
+						<h3>Contact</h3>
+				        <p>Please reach out to <a href="https://mandizhao.github.io/">Mandi Zhao</a>: mandi.zhao AT cs.columbia.edu</p>
 						
 					</section> 
 					
